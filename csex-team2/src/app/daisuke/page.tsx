@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -149,26 +150,14 @@ export default function DaisukePage() {
 
         {/* Back to Home Button */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/"
             className="inline-block bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             🏠 ホームに戻る
-          </a>
+          </Link>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes wave {
-          0%,
-          100% {
-            background-position: 0% 0%;
-          }
-          50% {
-            background-position: 100% 0%;
-          }
-        }
-      `}</style>
     </div>
   );
 }

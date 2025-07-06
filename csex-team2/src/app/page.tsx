@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import MemberCard from "@/components/MemberCard";
 import { ThemeToggle } from "@/components/ThemeToggle";

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -155,31 +156,14 @@ export default function MinPage() {
 
         {/* Back to Home Button */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/"
             className="inline-block bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 backdrop-blur-sm"
           >
             🌸 ホームに戻る
-          </a>
+          </Link>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes fall {
-          0% {
-            transform: translateY(-100vh) rotate(0deg);
-            opacity: 1;
-          }
-          100% {
-            transform: translateY(100vh) rotate(360deg);
-            opacity: 0;
-          }
-        }
-
-        .animate-fall {
-          animation: fall 8s linear infinite;
-        }
-      `}</style>
     </div>
   );
 }

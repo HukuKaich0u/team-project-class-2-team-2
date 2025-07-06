@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { useState } from "react";
 
 export default function RitsuPage() {
   const [activeSection, setActiveSection] = useState("home");
@@ -249,12 +250,12 @@ export default function RitsuPage() {
 
         {/* Back to Home Button */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/"
             className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             ❄️ ホームに戻る
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -15,7 +15,6 @@ export default function MemberCard({
   name,
   season,
   color,
-  bgColor,
   onViewMusic,
 }: MemberCardProps) {
   return (
