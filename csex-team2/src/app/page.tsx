@@ -1,12 +1,25 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import MemberCard from "@/components/MemberCard";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { MEMBERS } from "@/data/constants";
 
 export default function Home() {
+  const router = useRouter();
+
   const handleViewMusic = (memberName: string) => {
-    console.log(`${memberName}の音楽を表示`);
+    const routes: { [key: string]: string } = {
+      Min: "/min",
+      Daisuke: "/daisuke",
+      Koki: "/koki",
+      Ritsu: "/ritsu",
+    };
+
+    if (routes[memberName]) {
+      router.push(routes[memberName]);
+    }
   };
 
   return (
@@ -21,6 +34,12 @@ export default function Home() {
       {/* Header */}
       <header className="relative overflow-hidden glass-effect border-b border-white/20 dark:border-gray-700/50">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-purple-600/5 to-pink-600/5"></div>
+
+        {/* Theme Toggle Button */}
+        <div className="absolute top-4 right-4 z-50">
+          <ThemeToggle />
+        </div>
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="text-center">
             <div className="mb-8">
