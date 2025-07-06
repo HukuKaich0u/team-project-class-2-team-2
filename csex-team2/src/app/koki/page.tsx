@@ -9,6 +9,7 @@ export default function KokiPage() {
     {
       title: "we fell in love in october",
       artist: "girl in red",
+      videoId: "iggmiF7DNoM",
       description:
         "洋服屋さんとかで流れてそうな曲です。自分が働いている会社のCEOが好きな曲で、この前本当にたまたまおすすめされての思い出して入れました。",
     },
