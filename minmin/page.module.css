@@ -1,3 +1,59 @@
+body {
+  background: url(./images/cherry_blossom.png);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .title {
-  background-color: rgb(216, 237, 234);
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.content {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.musicTitle {
+  padding: 0.8rem;
+  text-align: center;
+  background: rgba(232, 173, 181, 0.9);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.musicInfo {
+  padding: 1rem;
+}
+
+.musicInfo iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 5px;
 }

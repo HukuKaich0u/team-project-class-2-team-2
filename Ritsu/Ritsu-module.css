@@ -1,38 +1,106 @@
+ul.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+li.menu {
+  list-style: none;
+  font-size: 20px;
+  color: white;
+  font-family: Arial;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color:#7bccff;
+  box-sizing:border-box;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-shadow: 5px 5px 10px grey;
+  border-radius: 7px;
+}
+
+a.menu{
+  text-decoration: none;
+  color:white;
+}
+
+a:hover{
+  color: rgb(44, 101, 171);
+}
+
+h2.heading{
+  background-color: #ebf7ff;
+  text-shadow: black;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', sans-serif;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top: solid 3px #7bccff;
+  border-bottom: solid 3px #7bccff;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background: rgba(0,0,0,);
+}
+
+section{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.box12{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5989cf;
+    background: #c6e4ff;
+    border-bottom: solid 6px #aac5de;
+    border-radius: 9px;
+}
+h1.box12 {
+    margin: 0; 
+    padding: 0;
+}
+
+.disc {
+  display: block;
+  font-size: 15px;
+  color:#dceefe;
+  font-family:'Franklin Gothic Medium', sans-serif;
+  background-color:#5989cf;
+  padding: 20px;
+  border-radius: 7px;
+  background: rgba(90, 167, 255, 0.6);
+  margin: 30px;
+}
+
+.title{
+  font-size: 30px;
+  font-family:c;
+  text-shadow: 3px 3px 6px grey;
+  color:#dceefe;
+}
+
+body {
+  background: url(image/23-10-47-824_512.webp);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+
 h1 {
-    text-align: center;
-    position: relative;
-    padding: 5px 26px 5px 42px;
-    background: #81ed6e;
-    font-size: 40px;
-    color: #2d2d2d;
-    margin-left: -33px;
-    line-height: 1.3;
-    border-bottom: solid 3px #abe7ff;
-    z-index:-2;
-}
-
-h1:before {
-  position: absolute;
-  content: '';
-  left: -2px;
-  top: -2px;
-  width: 0;
-  height: 0;
-  border: none;
-  border-left: solid 40px white;
-  border-bottom: solid 79px transparent;
-  z-index: -1;
-}
-
-h1:after {
-  position: absolute;
-  content: '';
-  right: -3px;
-  top: -7px;
-  width: 0;
-  height: 0;
-  border: none;
-  border-left: solid 40px transparent;
-  border-bottom: solid 79px white;
-  z-index: -1;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  margin-top: 30px;
 }
