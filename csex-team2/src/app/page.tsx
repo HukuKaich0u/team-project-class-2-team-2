@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import MemberCard from "@/components/MemberCard";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { NavigationMenu } from "@/components/NavigationMenu";
 import { MEMBERS } from "@/data/constants";
 
 export default function Home() {
@@ -34,8 +35,9 @@ export default function Home() {
       <header className="relative overflow-hidden glass-effect border-b border-white/20 dark:border-gray-700/50">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-purple-600/5 to-pink-600/5"></div>
 
-        {/* Theme Toggle Button */}
-        <div className="absolute top-4 right-4 z-50">
+        {/* Header Controls */}
+        <div className="absolute top-4 right-4 z-50 flex items-center gap-3">
+          <NavigationMenu />
           <ThemeToggle />
         </div>
 
